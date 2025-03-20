@@ -70,19 +70,31 @@ return {
               local l = vim.fn.line(".")
               local total = vim.fn.line("$")
               local col = vim.fn.col(".")
-              local progress = math.floor((l / total) * 100)
-              return string.format("%d%%%%  %d:%d ", progress, l, col)
+              --local progress = math.floor((l / total) * 100)
+              return string.format("%d:%d ", l, col)
             end,
           },
         },
+
         lualine_z = {
           {
             function()
-              return os.date("%H:%M")
+              local l = vim.fn.line(".")
+              local total = vim.fn.line("$")
+              --local col = vim.fn.col(".")
+              local progress = math.floor((l / total) * 100)
+              return string.format("%d%%%% ", progress)
             end,
-            icon = "",  -- optional clock icon
-          }
+          },
         },
+        --lualine_z = {
+          --{
+            --function()
+              --return os.date("%H:%M")
+            --end,
+            --icon = "",  -- optional clock icon
+          --}
+        --},
       },
       options = {
         theme = 'auto',
