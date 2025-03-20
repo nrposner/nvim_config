@@ -18,7 +18,7 @@ return {
     -- 'enter' for mappings similar to 'super-tab' but with 'enter' to accept
     --
     -- All presets have the following mappings:
-    -- C-space: Open menu or open docs if already open
+    -- C-r: Open menu or open docs if already open
     -- C-e: Hide menu
     -- C-k: Toggle signature help
     --
