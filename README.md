@@ -71,7 +71,7 @@ _neotree.lua_
 This one allows you to access more than just a single file at a time. Instead, you can navigate your whole filetree from inside neovim, as if it were a full IDE! 
 There's a ton of mappings and options here, and you can customize these to taste. My defaults use the home-row keys to navigate the files a la Vim: use j and k to move up and down, and l to open folders and files. You can also use Esc at the topmost line to move into the higher directory. 
 I also have <leader>o bound to open the filetree and <leader>c to close it. If the filetree is already open, you can use the open command to move into it!
-Do also check out what I've set to the symbols for file changes, deletions, etc. If you don't quite like, for example, that 'r' marks renamed files, or that an empty box marks unstaged files, change these to your preference! Any and all Unicode characters work.  
+Do also check out what I've set to the symbols for file changes, deletions, etc. If you don't quite like, for example, that a pencil marks renamed files and a dotted box marks unstaged files, change these to your preference! Any and all Unicode characters work.  
 
 _telescope.lua_
 Just about every Neovim tutorial out there will recommend installing Telescope. It's a blazing fast fuzzy finder that can operate very quickly over large codebases. 
