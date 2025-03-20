@@ -86,7 +86,7 @@ You won't spend much time using it directly, but lots of other plugins you want 
 _mason.lua_
 The two plugins in here leverage Mason, a configuration manager for LSPs, linters, formatters, and more. 
 What is an LSP? A linter? A DAP server? I installed Mason in order to never ask those questions again. Long story short, it lets you do fun stuff like autocomplete, syntax checking, and definitions of built-in objects for your language of choice.
-Note that, at present, I only use the LSP for Rust, `rust-analyzer`. If you want to use other languages, it's as simple as changing that line and adding them into the ensure_installed table. For example, if you wanted to drop rust and use Haskell and Java, you'd change `ensure_installed = { "rust_analyzer" }` into `ensure_installed = { "haskell-language-server", "jdtls"}`. 
+Note that, at present, I only use the LSP for Rust, `rust-analyzer`. If you want to use other languages, it's as simple as changing that line and adding them into the ensure_installed table. For example, if you wanted to drop rust and use Java, you'd change `ensure_installed = { "rust_analyzer" }` into `ensure_installed = { "jdtls"}`. 
 
 _gitsigns.lua_
 This is a must-have if you work within a git repository. 
