@@ -41,9 +41,21 @@ return {
       },
       git_status = {
         symbols = {
-          unstaged = "󰄱",
-          staged = "󰱒",
-        },
+          added     = "✚", -- NOTE: you can set any of these to an empty string to not show them
+          deleted   = "✖",
+          modified  = "",
+          renamed   = "r",
+          -- Status type
+          untracked = "",
+          ignored   = "",
+          unstaged  = "󰄱",
+          staged    = "󰱒",
+          conflict  = "",
+          },
+        --symbols = {
+          --unstaged = "󰄱",
+          --staged = "󰱒",
+        --},
       },
     },
   },
