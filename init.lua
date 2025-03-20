@@ -21,12 +21,6 @@ vim.opt.cursorline = true
 vim.opt.relativenumber = true
 vim.opt.clipboard = "unnamedplus"
 
-vim.g.last_key = ""
-vim.api.nvim_create_autocmd("InsertCharPre", {
-  callback = function()
-    vim.g.last_key = vim.v.char
-  end,
-})
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
