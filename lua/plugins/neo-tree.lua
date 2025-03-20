@@ -44,11 +44,11 @@ return {
           added     = "✚", -- NOTE: you can set any of these to an empty string to not show them
           deleted   = "✖",
           modified  = "",
-          renamed   = "r",
+          renamed   = "",
           -- Status type
-          untracked = "",
+          untracked = "", --"",
           ignored   = "",
-          unstaged  = "󰄱",
+          unstaged  = "", --"",--"󰄱", , , , , 
           staged    = "󰱒",
           conflict  = "",
           },
