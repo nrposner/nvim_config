@@ -36,7 +36,7 @@ The vim.opt lines, meanwhile, set certain useful options that are off by default
 
 But some of these are quite important. At the bottom, you'll see a lengthier chunk detailing `/lazy/lazy.nvim`. Below that, you'll see the lines `vim.opt.rtp:prepend(lazypath)` and `require("lazy").setup("plugins")` What are these?
 
-Step 3. LazyVim
+**Step 3. LazyVim**
 LazyVim is a very popular and higly performant package manager for Neovim. It's virtues are many, but all you need to know right now is that LazyVim is your all-in-one package manager, like pip for Python or npm for nodeJS. Developers of Neovim plugins target LazyVim (as well as other distributors like LunarVim) in order to make your experience of installing and using plugins quick and easy. 
 (LazyVim, like all the other software we discuss in this tutorial, is completely free and open source, with support from a community of passionate and dedicated mainainers. When you find a tool that is valuable to you, consider going to their [repos](https://github.com/LazyVim/LazyVim) and giving them a GitHub star!)
 Also, LazyVim has a kickass UI.
@@ -53,8 +53,7 @@ Now when you open Neovim, things should look quite different. You can also open 
 
 With this, we can now get to the fun stuff. 
 
-Step 4: Fortification and Beautification with Neovim Plugins
-
+**Step 4: Fortification and Beautification with Neovim Plugins**
 The default LazyVim experience, like the original Neovim experience, is still quite bare-bones and has a rather poor color scheme. So we're going to install some plugins. 
 
 Package installation in other domains can be stressful, but not so with LazyVim. Thanks to the setup we have here, installing a new plugin is as simple as making a new file in `plugins`, adding a snippet of code, saving the file, and reopening Neovim. All you need is an internet connection!
@@ -72,6 +71,7 @@ _neotree.lua_
 This one allows you to access more than just a single file at a time. Instead, you can navigate your whole filetree from inside neovim, as if it were a full IDE! 
 There's a ton of mappings and options here, and you can customize these to taste. My defaults use the home-row keys to navigate the files a la Vim: use j and k to move up and down, and l to open folders and files. You can also use Esc at the topmost line to move into the higher directory. 
 I also have <leader>o bound to open the filetree and <leader>c to close it. If the filetree is already open, you can use the open command to move into it!
+Do also check out what I've set to the symbols for file changes, deletions, etc. If you don't quite like, for example, that 'r' marks renamed files, or that an empty box marks unstaged files, change these to your preference! Any and all Unicode characters work.  
 
 _telescope.lua_
 Just about every Neovim tutorial out there will recommend installing Telescope. It's a blazing fast fuzzy finder that can operate very quickly over large codebases. 
