@@ -23,7 +23,6 @@ return {
             local filename = vim.fn.expand("%:t")
             local ext = vim.fn.expand("%:e")
             local devicons = require("nvim-web-devicons")
-            --local icon, _ = devicons.get_icon(filename, vim.bo.filetype, { default = true })
             local icon, icon_hl = devicons.get_icon(filename, ext, { default = true })
             if icon and icon_hl then
               icon = string.format("%%#%s#%s%%*", icon_hl, icon)
@@ -40,7 +39,8 @@ return {
             local leaf = parts[#parts]
             local dir = (#parts > 1) and table.concat(parts, sep, 1, #parts - 1) or ""
             if dir ~= "" then
-              return icon .. "  " .. dir .. sep .. "%#LualineFileNameBold#" .. leaf .. "%*"
+              return icon .. " " .. "%#LualineDir#" .. dir .. "%*" .. sep .. "%#LualineFileNameBold#" .. leaf .. "%*"
+              --return icon .. "  " .. dir .. sep .. "%#LualineFileNameBold#" .. leaf .. "%*"
             else
               return icon .. "  " .. "%#LualineFileNameBold#" .. leaf .. "%*"
             end

@@ -8,6 +8,7 @@ vim.cmd("abb hte the")
 vim.cmd("abb tostr to_string")
 vim.cmd("abb tostr() to_string()")
 vim.cmd([[highlight LualineFileNameBold gui=bold]])
+vim.cmd([[highlight LualineDir guifg=#808080]])
 
 
 vim.keymap.set("n", "<leader>e", ":lua vim.diagnostic.open_float()<CR>", {})
