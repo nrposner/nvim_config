@@ -10,7 +10,7 @@ return {
     dependencies = { "williamboman/mason.nvim", "neovim/nvim-lspconfig" },
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "rust_analyzer"}, -- Auto-install rust-analyzer
+        ensure_installed = { "rust_analyzer", "pyright",},
         automatic_installation = true,
       })
     end,

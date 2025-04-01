@@ -20,4 +20,19 @@ return {
     statuscolumn = { enabled = true },
     words = { enabled = true },
   },
+
+  keys = {
+    { 
+      "<leader>og", 
+      function() 
+        require("lazyvim.util").terminal({ 
+          "env", 
+          "LAZYGIT_CONFIG_FILE=" .. vim.fn.expand("~/.config/lazygit/config.yml"), 
+          "lazygit" 
+        }, { esc_esc = false }) 
+      end, 
+      desc = "Lazygit" 
+    },
+    --{ "<leader>lg", function() Snacks.lazygit() end, desc = "Lazygit"},
+  }
 }
