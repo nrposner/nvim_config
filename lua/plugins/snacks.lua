@@ -23,5 +23,6 @@ return {
 
   keys = {
     { "<leader>lg", function() Snacks.lazygit() end, desc = "Lazygit"},
+    { "<leader>Gb", function() Snacks.gitbrowse() end, desc = "Git Browse"},
   }
 }
