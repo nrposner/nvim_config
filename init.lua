@@ -21,6 +21,14 @@ vim.opt.cursorline = true
 vim.opt.relativenumber = true
 vim.opt.clipboard = "unnamedplus"
 
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "Avante",
+  callback = function()
+    vim.keymap.set("n", "ca", function()
+      require("avante.ui.buffer").accept_all()
+    end, { buffer = true, desc = "Avante: Accept all suggestions" })
+  end,
+})
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
