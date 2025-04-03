@@ -93,6 +93,10 @@ This is a must-have if you work within a git repository.
 Whenever you add, change, or delete lines in a git repo, this plugin will add lines in the margin which will show exactly where the change was made and which kind of change it was. 
 Actually, it's a good deal more powerful than that, but I mainly use it for the gutter lines. 
 
+_autopairs.lua_
+An essential quality-of-life pair completion plugin.
+Install it, forget about it, and never get frustrated by braces again. 
+
 _noice.lua_
 From the creator of LazyVim, a new, enhanced UI for LazyVim. 
 This is mainly a visual enhancement, but it's a great one, making the whol experience a good deal friendlier. 
@@ -107,6 +111,11 @@ It works especially well in conjunction with noice, and is practically made for 
 Namely, I have Neovim mode (so you always know whether you're in normal mode, inserting, visual, or command), a git branch label, a language icon and filepath, counts of errors, warnings, and suggestions, number of lines added or deleted, cursor position on row:column, and percent-progress in the file. 
 As you can see from the commented code, I used to have a clock as well, but I got rid of it because tmux had the same functionality. Customize this as suits your needs!
 
+_lazygit.lua_
+A powerful interface for managing Git from inside Neovim.
+I've just recently started using it, but it's a keeper. You can quickly get an overview of all commits, branches, edited/added/staged files, and do just about everything you can do from the command like using a few keymaps. 
+Check out the creator's [guide](https://www.youtube.com/watch?v=CPLdltN7wgE) for a... not really beginner friendly primer. I'd say a more accessible introduction would be called for, but you're setting up an internal Git interface for Neovim, you're not a beginner. You'll be fine. 
+
 _whichkey.lua_
 A neat little helper in case you forget vim motions or your own keybinds. If you're part way through a command that hasn't executed yet and you don't type for a short period, it'll bring up a menu of possible commands to follow. If you use your leader key, it'll bring up the keybinds you defined which use it!
 My implementation has a slightly longer delay time than default, 300 milliseconds instead of 200. I just felt like the default was a little too trigger-happy. Customize to taste!
@@ -115,9 +124,21 @@ _trouble.lua_
 An enhanced bug and error display system. Includes several keybinds for different levels of observability into whatever trouble the code is causing you. 
 I don't use this too much myself, since I have a lot of the same inline diagnostics keyed to <leader>e. But nice to have nonetheless!
 
+_avante.lua_
+A Cursor-like GenAI integration plugin that lets you query the model of your choice from inside Neovim. 
+I put it lower than others might since I haven't gotten to using it too much as of yet, but it's pretty nice to work with. I may raise it higher once I can get the keybinds up and running and spend some time getting to know it. For the moment, it's not quite plug-and-play. 
+
 _rustacean.lua_
 If you program in Rust, this is a must-have collection of plugins for the language. Don't leave home without it. 
 If you don't use Rust however, it'll just weigh you down. 
+
+_jupytext.lua_
+If you're in the unenviable position of spending a nontrivial amount of your time working with Jupyter notebooks, you'll quickly get very, very tired of either having to tab into another IDE or edit raw JSON. With Jupytext, you get a good-looking view into notebooks and can edit them like markdown. If youv'e used R Markdown files, it'll be familiar. 
+Note that this doesn't allow you to *run* Jupyter notebooks. Other plugins exist for that, but I haven't tested them out yet. 
+
+_nvim-surround.lua_
+A plugin extending Vim's motions to allow for easy surrounding. 
+The functionality is great, but using it will take a little practice. Check out the [repo](https://github.com/kylechui/nvim-surround) for a guide. Getting good at this will take out a lot of little pains. 
 
 _flash.lua_
 Flash is a more in-depth, 'I'll get to learning how it works one day' plugins for 'search labels, enhanced character motions and Treesitter integration.' More experienced developers swear by it, but I haven't gotten around to using it just yet. 
