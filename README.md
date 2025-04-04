@@ -111,6 +111,9 @@ It works especially well in conjunction with noice, and is practically made for 
 Namely, I have Neovim mode (so you always know whether you're in normal mode, inserting, visual, or command), a git branch label, a language icon and filepath, counts of errors, warnings, and suggestions, number of lines added or deleted, cursor position on row:column, and percent-progress in the file. 
 As you can see from the commented code, I used to have a clock as well, but I got rid of it because tmux had the same functionality. Customize this as suits your needs!
 
+_snacks.lua_
+A curated collection of quality-of-life improvements, once again from the creator of LazyVim. Mainly invisible changes for things like handling large files, nicer notifications, improved scrolling, and so on. A must-have.
+
 _lazygit.lua_
 A powerful interface for managing Git from inside Neovim.
 I've just recently started using it, but it's a keeper. You can quickly get an overview of all commits, branches, edited/added/staged files, and do just about everything you can do from the command like using a few keymaps. 
@@ -143,8 +146,6 @@ The functionality is great, but using it will take a little practice. Check out 
 _flash.lua_
 Flash is a more in-depth, 'I'll get to learning how it works one day' plugins for 'search labels, enhanced character motions and Treesitter integration.' More experienced developers swear by it, but I haven't gotten around to using it just yet. 
 
-_snacks.lua_
-A curated collection of quality-of-life improvements, once again from the creator of LazyVim. What do they do? Who knows. I might look into them one day, but for now I'm just trusting that my quality of life has been improved by the decision to install it. 
 
 
 
