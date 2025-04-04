@@ -148,28 +148,11 @@ A curated collection of quality-of-life improvements, once again from the creato
 
 
 
-Step n: tmux Installation
-Use `brew install tmux` or your package manager of choice on your platform of choice
+## Step 5: tmux Installation
+tmux is a multiplexer terminal and an effective platform for further customizing your terminal experience. 
 
-Basics to cover:
-  What is tmux
-  tmux process -> session -> window -> pane
-  tmux attach and detach
-  Basic commands to open and close panes, switch between them, and split them horizontally and vertically
-  Default prefix is ctrl+b
+My own tmux config is not very sophisticated, and is primarily based on this [video](https://www.youtube.com/watch?v=GH3kpsbbERo). It will take you from installation through basic use and recommended plugins. 
 
-Step n: tmux Configuration
-Set up tmux.reset.conf file in ~/.tmux directory
-Set up ~/.tmux.conf file in home directory (or in ~/.config directory, according to preference)
-Copy over elements of .tmux.conf and tmux.reset.conf from this repo
-The division between these two files is primarily for the purposes of organization
-Redefine tmux prefix to whatever is desired: I recommend ctrl+a
-Add tmux plugin manager to tmux.reset.conf and clone the repo using `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+Among the most useful plugins described in that video is tmux-catppuccin, which really brings together the look of the terminal in combination with a catppuccin theme for Neovim. It also includes a very nice-looking upper status bar which nicely complements a Neovim lualine. 
 
-Useful changes and tips:
-  Renumbering of windows and base indexing of windows from 1 instead of 0 is easier to use
-  Use vim key motions (default activation prefix + [ ) in order to move through terminal contents, including jumping multiple lines and yanking. Exit vim mode using Enter
-  prefix+z to zoom in or out of a particular pane is now noted by a magnifying glass in the window tab
-  Can move between panes using prefix+hjkl vim directions
-  
-
+I also personally recommend changing the default tmux prefix from Ctrl+B to something friendlier. Personally, I use Ctrl+A, which makes switching windows nice and fluid. Other useful changes mentioned in the video include indexing windows from 1 instead of 0 and allowing navigation in terminal output using Vim motions. 
