@@ -45,3 +45,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
 
+-- Map two consecutive spaces to Escape in Insert mode
+vim.keymap.set('i', '  ', '<Esc>', { noremap = true, silent = true })
+
