@@ -13,6 +13,13 @@ return {
         on_attach = function(_, bufnr)
           -- Optional: add keymaps here
         end,
+        settings = {
+          ["rust-analyzer"] = {
+            checkOnSave = {
+              command = "clippy",
+            },
+          },
+        },
       },
       dap = {
         adapter = require("rust-tools.dap").get_codelldb_adapter(
