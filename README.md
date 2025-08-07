@@ -1,7 +1,7 @@
 Guide to setting up a neovim config, pulling liberally from DevOps Toolbox and typcraft.
 
 **Step 0 (optional): Terminal Installation**
-For best results, download a terminal like iTerm2 instead of using the default shell. In addition, download a [Nerd Font](https://www.nerdfonts.com/font-downloads).
+For best results, download a terminal like Ghostty instead of using the default shell. In addition, download a [Nerd Font](https://www.nerdfonts.com/font-downloads).
 I use MesloLGL Nerd Font Mono, but any monspaced font that supports vim devicons will work. 
 
 **Step 1: Neovim installation**
