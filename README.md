@@ -67,6 +67,11 @@ Though not strictly functional, this is probably the first plugin you should ins
 This file installs the catppuccin plugin, which is a beatiful colorscheme that makes working in the terminal much easier on the eyes. 
 You'll also find commented code to use a different color scheme, tokyo-night. I go back and forth between them: I prefer tokyo-night's text colors, but catppuccin's color selection otherwise. You can switch between them as easily as commenting out one, uncommenting the other, saving the file, and reopening neovim. Switch between them and see what you like best!
 
+_lazygit.lua_
+A powerful interface for managing Git from inside Neovim.
+After several months with it, it's my go-to: I can quickly get an overview of all commits, branches, edited/added/staged files, and do just about anything else I need. Partial commits? Patching individual lines? Quickly and easily resolving merge conflicts? Does it all, right from the terminal. I never need to leave Neovim to handle my git. 
+Check out the creator's [guide](https://www.youtube.com/watch?v=CPLdltN7wgE) for a... not really beginner friendly primer. I'd say a more accessible introduction would be called for, but you're setting up an internal Git interface for Neovim, you're not a beginner. You'll be fine. 
+
 _neotree.lua_
 This one allows you to access more than just a single file at a time. Instead, you can navigate your whole filetree from inside neovim, as if it were a full IDE! 
 There's a ton of mappings and options here, and you can customize these to taste. My defaults use the home-row keys to navigate the files a la Vim: use j and k to move up and down, and l to open folders and files. You can also use Esc at the topmost line to move into the higher directory. 
@@ -93,6 +98,10 @@ This is a must-have if you work within a git repository.
 Whenever you add, change, or delete lines in a git repo, this plugin will add lines in the margin which will show exactly where the change was made and which kind of change it was. 
 Actually, it's a good deal more powerful than that, but I mainly use it for the gutter lines. 
 
+_harpoon.lua_
+Hop between up to 4 commonly-visited files in a repository like a roadrunner on cocaine.
+The Primeagen's very own Neovim plugin. If you find yourself constantly tabbing between the same 2-4 files, harpoon is for you.
+
 _autopairs.lua_
 An essential quality-of-life pair completion plugin.
 Install it, forget about it, and never get frustrated by braces again. 
@@ -114,10 +123,9 @@ As you can see from the commented code, I used to have a clock as well, but I go
 _snacks.lua_
 A curated collection of quality-of-life improvements, once again from the creator of LazyVim. Mainly invisible changes for things like handling large files, nicer notifications, improved scrolling, and so on. A must-have.
 
-_lazygit.lua_
-A powerful interface for managing Git from inside Neovim.
-I've just recently started using it, but it's a keeper. You can quickly get an overview of all commits, branches, edited/added/staged files, and do just about everything you can do from the command like using a few keymaps. 
-Check out the creator's [guide](https://www.youtube.com/watch?v=CPLdltN7wgE) for a... not really beginner friendly primer. I'd say a more accessible introduction would be called for, but you're setting up an internal Git interface for Neovim, you're not a beginner. You'll be fine. 
+_flash.lua_
+Quickly jump around text on your screen.
+This takes a little getting used to, but feels so nice once you do. I've only begun to tap into what it can do.
 
 _whichkey.lua_
 A neat little helper in case you forget vim motions or your own keybinds. If you're part way through a command that hasn't executed yet and you don't type for a short period, it'll bring up a menu of possible commands to follow. If you use your leader key, it'll bring up the keybinds you defined which use it!
@@ -126,10 +134,6 @@ My implementation has a slightly longer delay time than default, 300 millisecond
 _trouble.lua_
 An enhanced bug and error display system. Includes several keybinds for different levels of observability into whatever trouble the code is causing you. 
 I don't use this too much myself, since I have a lot of the same inline diagnostics keyed to <leader>e. But nice to have nonetheless!
-
-_avante.lua_
-A Cursor-like GenAI integration plugin that lets you query the model of your choice from inside Neovim. 
-I put it lower than others might since I haven't gotten to using it too much as of yet, but it's pretty nice to work with. I may raise it higher once I can get the keybinds up and running and spend some time getting to know it. For the moment, it's not quite plug-and-play. 
 
 _rustacean.lua_
 If you program in Rust, this is a must-have collection of plugins for the language. Don't leave home without it. 
@@ -142,9 +146,6 @@ Note that this doesn't allow you to *run* Jupyter notebooks. Other plugins exist
 _nvim-surround.lua_
 A plugin extending Vim's motions to allow for easy surrounding. 
 The functionality is great, but using it will take a little practice. Check out the [repo](https://github.com/kylechui/nvim-surround) for a guide. Getting good at this will take out a lot of little pains. 
-
-_flash.lua_
-Flash is a more in-depth, 'I'll get to learning how it works one day' plugins for 'search labels, enhanced character motions and Treesitter integration.' More experienced developers swear by it, but I haven't gotten around to using it just yet. 
 
 
 
