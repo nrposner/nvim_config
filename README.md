@@ -1,4 +1,4 @@
-Guide to setting up a tmux+nvim config, pulling liberally from DevOps Toolbox and typcraft.
+Guide to setting up a neovim config, pulling liberally from DevOps Toolbox and typcraft.
 
 **Step 0 (optional): Terminal Installation**
 For best results, download a terminal like iTerm2 instead of using the default shell. In addition, download a [Nerd Font](https://www.nerdfonts.com/font-downloads).
@@ -116,7 +116,7 @@ The default uses enter-completion for auto-suggestions, but my implementation he
 
 _lualine.lua_
 Like `colors` and `noice`, this is mainly visual, but highly, highly recommended. This changes the bottom of your screen into a customizable status bar that can show you just about anything you want. 
-It works especially well in conjunction with noice, and is practically made for tmux (which we'll get into in the next section). My implementation here puts several objects on the status bar, some of them hidden until certain conditions arise:
+It works especially well in conjunction with noice, and is practically made for tmux (see my other dotfiles!). My implementation here puts several objects on the status bar, some of them hidden until certain conditions arise:
 Namely, I have Neovim mode (so you always know whether you're in normal mode, inserting, visual, or command), a git branch label, a language icon and filepath, counts of errors, warnings, and suggestions, number of lines added or deleted, cursor position on row:column, and percent-progress in the file. 
 As you can see from the commented code, I used to have a clock as well, but I got rid of it because tmux had the same functionality. Customize this as suits your needs!
 
@@ -148,13 +148,3 @@ A plugin extending Vim's motions to allow for easy surrounding.
 The functionality is great, but using it will take a little practice. Check out the [repo](https://github.com/kylechui/nvim-surround) for a guide. Getting good at this will take out a lot of little pains. 
 
 
-
-
-## Step 5: tmux Installation
-tmux is a multiplexer terminal and an effective platform for further customizing your terminal experience. 
-
-My own tmux config is not very sophisticated, and is primarily based on this [video](https://www.youtube.com/watch?v=GH3kpsbbERo). It will take you from installation through basic use and recommended plugins. 
-
-Among the most useful plugins described in that video is tmux-catppuccin, which really brings together the look of the terminal in combination with a catppuccin theme for Neovim. It also includes a very nice-looking upper status bar which nicely complements a Neovim lualine. 
-
-I also personally recommend changing the default tmux prefix from Ctrl+B to something friendlier. Personally, I use Ctrl+A, which makes switching windows nice and fluid. Other useful changes mentioned in the video include indexing windows from 1 instead of 0 and allowing navigation in terminal output using Vim motions. 
