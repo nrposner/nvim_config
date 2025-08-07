@@ -1,20 +1,28 @@
 return {
   {
-  "williamboman/mason.nvim",
-  config = function()
-    require("mason").setup()
-  end,
+    "williamboman/mason.nvim",
+    config = function()
+      require("mason").setup()
+    end,
   },
   {
     "williamboman/mason-lspconfig.nvim",
     dependencies = { "williamboman/mason.nvim", "neovim/nvim-lspconfig" },
     config = function()
+      local lspconfig = require("lspconfig")
       require("mason-lspconfig").setup({
-        ensure_installed = { "rust_analyzer", "pyrefly", "gopls", "clangd", "eslint"},
+        ensure_installed = { "rust_analyzer", "pyrefly", "clangd" },
         automatic_installation = true,
         handlers = {
-          -- override default handler for rust_analyzer to do nothing
           rust_analyzer = function() end,
+          pyrefly = function()
+            lspconfig.pyrefly.setup({
+              cmd       = { "pyrefly", "lsp" },
+              filetypes = { "python" },
+              single_file_support = true,
+              settings  = { pyrefly = { typeCheckingMode = "strict" } },
+            })
+          end,
         },
       })
     end,
