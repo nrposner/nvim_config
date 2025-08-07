@@ -99,6 +99,7 @@ return {
       },
       options = {
         theme = 'auto',
+        transparent = true,
         globalstatus = true,
         section_separators = { left = "", right = "" },
         component_separators = { left = "", right = "" },
