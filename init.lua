@@ -17,6 +17,7 @@ vim.keymap.set("n", "<leader>e", ":lua vim.diagnostic.open_float()<CR>", {})
 
 vim.keymap.set("n", "<leader>n", vim.diagnostic.goto_next)
 vim.keymap.set("n", "<leader>p", vim.diagnostic.goto_prev)
+vim.keymap.set("n", "<leader>d", vim.lsp.buf.definition)
 vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
 vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "LSP Rename Symbol" })
 vim.keymap.set("n", "<leader>jl", "ggVG", { desc = "Select entire file" })
