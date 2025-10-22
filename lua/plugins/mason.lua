@@ -3,6 +3,7 @@ return {
     "williamboman/mason.nvim",
     config = function()
       require("mason").setup()
+      require('lspconfig').gleam.setup{}
     end,
   },
   {
@@ -11,13 +12,13 @@ return {
     config = function()
       local lspconfig = require("lspconfig")
       require("mason-lspconfig").setup({
-        ensure_installed = { "rust_analyzer", "pyrefly", "clangd", "wgsl_analyzer" },
+        ensure_installed = { "rust_analyzer", "ty", "clangd", "wgsl_analyzer" },
         automatic_installation = true,
         handlers = {
           rust_analyzer = function() end,
-          pyrefly = function()
-            lspconfig.pyrefly.setup({
-              cmd       = { "pyrefly", "lsp" },
+          ty = function()
+            lspconfig.ty.setup({
+              cmd       = { "ty", "lsp" },
               filetypes = { "python" },
               single_file_support = true,
               settings  = { pyrefly = { typeCheckingMode = "strict" } },

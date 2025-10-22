@@ -2,7 +2,7 @@ return {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate",
 	config = function()
 		local config = require("nvim-treesitter.configs")
 		config.setup({
-			ensure_installed = {"lua", "python", "rust", "wgsl"},
+			ensure_installed = {"lua", "python", "rust", "wgsl", "gleam"},
 			highlight = {enable = true},
 			indent = {enable = true},
 		})
