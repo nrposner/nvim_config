@@ -22,6 +22,17 @@ vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
 vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "LSP Rename Symbol" })
 vim.keymap.set("n", "<leader>jl", "ggVG", { desc = "Select entire file" })
 
+-- window remaps
+--
+vim.keymap.set('n', '<leader>wh', '<C-w>h', { desc = 'Move to window left' })
+-- nnoremap <leader>wj <C-w>j
+vim.keymap.set('n', '<leader>wj', '<C-w>j', { desc = 'Move to window down' })
+-- nnoremap <leader>wk <C-w>k
+vim.keymap.set('n', '<leader>wk', '<C-w>k', { desc = 'Move to window up' })
+-- nnoremap <leader>wl <C-w>l
+vim.keymap.set('n', '<leader>wl', '<C-w>l', { desc = 'Move to window right' }) 
+
+
 -- vim.keymap.set('n', 'U', '<C-r>')
 
 vim.opt.number = true
